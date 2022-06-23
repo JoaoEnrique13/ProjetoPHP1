@@ -43,21 +43,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=op, initial-scale=1.0">
     <title>Controller</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body>
-<table style="border: 1px solid dodgerblue; padding: 20px;">
-        <tr>
-            <td style="border: 1px solid dodgerblue; padding: 20px;"><?php echo $pegarvalor->getName();?></td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid dodgerblue; padding: 20px;"><?php echo $pegarvalor->getEndereco();?></td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid dodgerblue; padding: 20px;"><?php echo $pegarvalor->getBairro();?></td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid dodgerblue; padding: 20px;"><?php echo $pegarvalor->getCep();?></td>
-        </tr>
-    </table>
+<body style="display: flex!important;  justify-content: center; min-height: 100vh; align-items: center;">
+
+    <div class="container">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Cep</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><?php echo $pegarvalor->getName();?></td>
+                    <td><?php echo $pegarvalor->getEndereco();?></td>
+                    <td><?php echo $pegarvalor->getBairro();?></td>
+                    <td><?php echo $pegarvalor->getCep();?></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
